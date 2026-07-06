@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sheet Music Generator</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- VexFlow -->
+    <script src="https://unpkg.com/vexflow/releases/vexflow-min.js"></script>
+</head>
+
+<body>
+    <h1>Jake's Sheet Music Generator</h1>
+
+    <div class="controls">
+        <label>Clef:
+            <select id="clef">
+                <option value="treble">Treble</option>
+                <option value="bass">Bass</option>
+            </select>
+        </label>
+
+        <label>Key:
+            <select id="key">
+                <option value="C">C</option>
+                <option value="G">G</option>
+                <option value="D">D</option>
+                <option value="A">A</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="Bb">Bb</option>
+                <option value="Eb">Eb</option>
+            </select>
+        </label>
+
+        <label>Time Signature:
+            <select id="time">
+                <option value="4/4">4/4</option>
+                <option value="3/4">3/4</option>
+                <option value="6/8">6/8</option>
+            </select>
+        </label>
+
+        <button id="generate">Generate Music</button>
+    </div>
+
+    <div id="notation"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
